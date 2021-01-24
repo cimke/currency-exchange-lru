@@ -19,7 +19,7 @@ yarn dev
 ## Usage
 Open [localhost:8000](http://localhost:8000).
 
-Send get request to `/query` with `base_currency`, `quote_currency`, `base_amount` to receive an object with interface:
+Send get request to `/quote` with query params: `base_currency`, `quote_currency`, `base_amount` to receive an object with interface:
 ```
 interface responseExample {
 	exchange_rate: number;
