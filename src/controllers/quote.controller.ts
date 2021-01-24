@@ -11,7 +11,6 @@ exports.getQuote = async function (
 	const quoteCurrency: string = req.query.quote_currency as string;
 	const baseAmount: number = parseInt(req.query.base_amount as string);
 	try {
-		console.log('controller reached')
 		const quote = await getQuote({
 			baseCurrency,
 			quoteCurrency,

@@ -14,7 +14,7 @@ export const getQuote = async (quote: IQuote) => {
 		baseObject = await getBaseCurrencies(quote.baseCurrency);
 		cache.add(quote.baseCurrency, baseObject);
 	}
-	console.log('cache', cache)
+
 	return createReturnObject(baseObject as ICurrencyObject, quote);
 };
 
